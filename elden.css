@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+body {
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    background-color: black;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.design-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    border-bottom: 1px solid #333333;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    min-width: 10rem;
+    max-width: 16rem;
+    height: 2.5rem;
+}
+
+.search-bar-inner {
+    display: flex;
+    width: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    background-color: #333333;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0 1rem;
+    border: none;
+    background-color: #333333;
+    color: #FFFFFF;
+    outline: none;
+    border-left: none;
+}
+
+.user-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('https://i.pinimg.com/236x/2f/dc/d3/2fdcd309a463162eeac0396152b68a1d.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 2.5rem;
+    flex-grow: 1;
+}
+
+.content-container {
+    max-width: 960px;
+    width: 100%;
+}
+
+.game-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.flex {
+    display: flex;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .game-title {
+    color: white;
+    letter-spacing: 0.025em; /* light tracking */
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.25; /* leading-tight */
+  }
+  
+.game-banner {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url('https://i.pinimg.com/736x/40/94/4b/40944bb2bab64f348405beb7375500c2.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.game-description {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #434343;
+    padding: 0 1rem;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #CBCBCB;
+}
+
+.tab.active {
+    border-bottom: 3px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.tab:hover {
+    color: #FFFFFF;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.section-content {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.trailer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
