@@ -170,6 +170,8 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #CBCBCB;
+    border-bottom: 3px solid #000000;
+    transition: border 0.3s;
 }
 
 .tab.active {
