@@ -203,28 +203,37 @@ body {
     background-color: #000000;
 }
 
-hr {
-    border: none;
-    height: 3px;
-    background-color: #ffffff;
-}
 
 .imageMedia {
     display: flex;
-    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    max-width: 960px;
     flex-direction: center;
     align-items: center;
-    gap: 35px;
+    gap: 15px;
 }
 
 .imageMedia img {
-    width: auto; /* Set the width you want */
-    height: 300px; /* Set the height you want */
+    border-radius: 15px;
+    width: auto; 
+    height: 300px; 
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
 }
 
 .imageMedia img:last-child {
     margin-bottom: 0;
+}
+
+.news {
+    text-align: center;
+    line-height: 2;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffffff;
 }
