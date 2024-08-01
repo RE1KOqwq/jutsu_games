@@ -202,3 +202,29 @@ body {
     align-items: center;
     background-color: #000000;
 }
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.imageMedia {
+    display: flex;
+    width: 100%;
+    flex-direction: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.imageMedia img {
+    width: auto; /* Set the width you want */
+    height: 300px; /* Set the height you want */
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+
+.imageMedia img:last-child {
+    margin-bottom: 0;
+}
