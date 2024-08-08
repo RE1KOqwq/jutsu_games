@@ -5,8 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekiro: Shadows Die Twice</title>
     <link rel="stylesheet" href="sekiro.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <style>
+        .your-class {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .slider_img {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .slider_img img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            overflow: hidden;
+            /*height: 400px;*/
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
 
+        .slick-center .slider_img img {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .slick-prev, .slick-next {
+            font-size: 0;
+            color: transparent;
+            border: none;
+            background-color: #ab935d;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1;
+            transition: background-color 0.3s ease;
+        }
+
+        .slick-prev:hover, .slick-next:hover {
+            background-color: #191308;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            font-size: 20px;
+            color: #fbf9f9;
+            line-height: 40px;
+        }
+
+        .slick-prev {
+            left: -50px;
+        }
+
+        .slick-next {
+            right: -50px;
+        }
     </style>
 </head>
 <body background="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsteamcommunity.com%2Fmarket%2Flistings%2F753%2F814380-Battlefield%3Fl%3Drussian&psig=AOvVaw2crHOvGBLx7hbSFiriCxnj&ust=1723137700116000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiCzKWy44cDFQAAAAAdAAAAABAE">
@@ -40,6 +96,15 @@
                 </p>
             </div>
         </section>
+
+        <div class="your-class">
+            <div class="slider_img"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" alt="Sekiro: Shadows Die Twice"></div>
+            <div class="slider_img"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" alt="Sekiro: Shadows Die Twice"></div>
+            <div class="slider_img"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" alt="Sekiro: Shadows Die Twice"></div>
+            <div class="slider_img"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" alt="Sekiro: Shadows Die Twice"></div>
+            <div class="slider_img"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" alt="Sekiro: Shadows Die Twice"></div>
+            <div class="slider_img"> <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/capsule_616x353.jpg?t=1721684463" alt="Sekiro: Shadows Die Twice"></div>
+        </div>
     </main>
 
     <footer>
@@ -47,6 +112,37 @@
             <p>&copy; 2024 Sekiro: Shadows Die Twice. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.your-class').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 2,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 
 </body>
 </html>
